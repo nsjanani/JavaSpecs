@@ -33,3 +33,34 @@ Additional Rules:
 <li> Spec #1: byte, short and char produce only int results </li>
 <li> Spec #2: Evaulation of an expression is always from left to right </li>
 </ul>
+
+<h5> Bitwise Operators: </h5> (Example File Name: BitwiseOperators)
+<ul>
+<li> Spec #1: & (AND) - Operates on a binary operator
+    <ol> 
+    <li>1 & 1 = 1 </li>
+    <li>1 & anything = 0 </li>
+    </ol>
+</li>
+<li> Spec #2: | (OR) - Operates on a binary operator
+    <ol>
+    <li>0 | 0 = 0</li>
+     <li>1 & anything = 1 </li>
+    </ol>
+</li>
+<li> Spec #3: ^ (XOR) - Operates on a binary operator
+    <ol>
+    <li>1 ^ 0 = 1</li>
+    <li>0 ^ 1 = 1 </li>
+    <li>0 ^ 0 = 0 </li>
+    <li>1 ^ 1 = 0 </li>
+    </ol>
+</li>
+<li> Spec #4: ~ (Complement) - Operates on a unary operator
+    <ol>
+    <li>~1 = 0</li>
+    <li>~0 = 1</li>
+    <li> Note: Compiler will give 2’s complement of the result of that complemented number</li>
+    </ol>
+</li>
+</ul>
