@@ -1,4 +1,4 @@
-package com.java.specs;
+package com.java.specs.operators;
 
 public class OperatorEvaluation {
 
