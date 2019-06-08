@@ -27,7 +27,7 @@ Additional Rules:
 <li> Spec #5: Boxing followed by Widening is acceptable </li>
 </ul>
 
-<h4> Operators: </h4> (Example File Name: Operators)
+<h4> Operator Evaluation: </h4> (Example File Name: Operator Evaluation)
 <ul>
 <li> Spec #1: byte, short and char produce only int results </li>
 <li> Spec #2: Evaulation of an expression is always from left to right </li>

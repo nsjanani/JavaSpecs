@@ -1,10 +1,10 @@
 package com.java.specs;
 
-public class Operators {
+public class OperatorEvaluation {
 
     public static void main(String[] args) {
 
-        /* Rule #1: byte, short and char produce only int results
+        /* Spec #1: byte, short and char produce only int results
          * And hence the result can't be assigned to an short, byte or char and only to an int
          */
         short s = 1;
@@ -31,6 +31,5 @@ public class Operators {
         for(int v : x) {
             System.out.println(v);
         }
-
     }
 }
