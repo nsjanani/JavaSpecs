@@ -1,7 +1,7 @@
 <h1> Java Specs: </h1>
 (Please refer the examples matching the same file name)
 
-<h4>Declaration Order</h4> (Example File Name: DeclartionOrder)
+<h4>Declaration Order</h4> (Example File Name: DeclartionOrder.java)
 <ul>
 <li> Spec #1: Order in which a constructor, methods and variables are defined inside a class doesn't matter at all</li>
 <li> Spec #2: Order in which variables are defined does matter inside a method</li>        
@@ -13,7 +13,7 @@
 </ul>
 
 <h4> Conversion: </h4> 
-(Example File Name: Conversion)
+(Example File Name: Conversion.java)
 In a overloaded world, the priorities for the conversion in order are:
 <ul>
 <li> Spec #1: Widening (Converting a primitive to higher order primitive) </li>
@@ -28,13 +28,13 @@ Additional Rules:
 </ul>
 
 <h4> Operators: </h4> 
-<h5> Operator Evaluation: </h5> (Example File Name: OperatorEvaluation)
+<h5> Operator Evaluation: </h5> (Example File Name: OperatorEvaluation.java)
 <ul>
 <li> Spec #1: byte, short and char produce only int results </li>
 <li> Spec #2: Evaulation of an expression is always from left to right </li>
 </ul>
 
-<h5> Bitwise Operators: </h5> (Example File Name: BitwiseOperators)
+<h5> Bitwise Operators: </h5> (Example File Name: BitwiseOperators.java)
 <ul>
 <li> Spec #1: & (AND) - Operates on a binary operator
     <ol> 
@@ -65,7 +65,7 @@ Additional Rules:
 </li>
 </ul>
 
-<h5> Shift Operators: </h5> (Example File Name: BitwiseOperators)
+<h5> Shift Operators: </h5> (Example File Name: ShiftOperators.java)
 <ul>
 <li> Spec #1: >> (Signed Right Shift) 
     <ol> 
@@ -93,4 +93,12 @@ Additional Rules:
     </li>Therefore, there is no need for the Unsigned Left Shift Operator (<<<) in Java. Because the Left Shift Operator (<<) does the Job.</li>
    </ol>
 </li>
+</ul>
+
+<h5> Promoting Operands: </h5> (Example File Name: PromotingOperands.java)
+<ul>
+<li>Spec #1: If either of the operand is double, the result is promoted to double</li>
+<li>Spec #2: Else If either of the operand is float, the result is promoted to float</li>
+<li>Spec #3: Else If either of the operand is long, the result is promoted to long</li>
+<li>Spec #4: Else If either of the operand is int, the result is promoted to int</li>
 </ul>

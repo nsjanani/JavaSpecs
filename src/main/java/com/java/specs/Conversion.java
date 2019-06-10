@@ -7,23 +7,23 @@ public class Conversion {
          * Though wrapper class (Short) of primitive (short) does exist, preference is given for widening
          */
         short x = 2;
-        Rule1.method(x); // --> Output : "Inside int primitive"
+        Spec1.method(x); // --> Output : "Inside int primitive"
 
        /* Spec #2: Boxing (Converting a primitive to its corresponding reference wrapper)
         * As no high order primitive found, preference is given to Wrapper class
         */
         short x1 = 3;
-        Rule2.method(x1);
+        Spec2.method(x1);
 
         /* Spec #3: Var-args
          * As no high order primitive and wrapper class found, preference is given to var-args
          */
         short x2 = 4;
-        Rule3.method(x2);
+        Spec3.method(x2);
     }
 }
 
-class Rule1 {
+class Spec1 {
 
     public static void method(short... s) {
         System.out.println("Inside Short var-args");
@@ -42,7 +42,7 @@ class Rule1 {
     }
 }
 
-class Rule2 {
+class Spec2 {
     public static void method(Short s) {
         System.out.println("Inside Short Wrapper");
     }
@@ -52,7 +52,7 @@ class Rule2 {
     }
 }
 
-class Rule3 {
+class Spec3 {
     public static void method(short... s) {
         System.out.println("Inside Short var-args");
     }
