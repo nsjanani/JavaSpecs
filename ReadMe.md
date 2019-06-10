@@ -64,3 +64,33 @@ Additional Rules:
     </ol>
 </li>
 </ul>
+
+<h5> Shift Operators: </h5> (Example File Name: BitwiseOperators)
+<ul>
+<li> Spec #1: >> (Signed Right Shift) 
+    <ol> 
+    <li>Shifts the bits of the number to the right by 1 and fills 0 on the left</li>
+    <li>Having the effect of divide the number by 2</li>
+    <li>Preserves the sign of the initial number</li>
+    </ol>
+</li>
+<li> Spec #2: >>> (Unsigned Right Shift)
+    <ol>
+    <li>Shifts the bits of the number to the right by 1 and fills 0 on the left</li>
+    <li>Doesn't preserve the sign of the initial number</li>
+    </ol>
+</li>
+<li> Spec #3: >> (Left Shift)
+    <ol>
+    <li>Shifts the bits of the number to the left by 1 and fills 0 on the left</li>
+    </ol>
+</li>
+<li> Spec #4: There is nothing called Signed/Unsigned Left Shift, as they both are identical
+    <ol>
+    <li>Here is why ? </li>
+    <li>For signed shift operators. MSB (Most Significant Bit) is the place to store the sign values (‘1s’ for negative values, and ‘0s’ for positive values).</li>
+    <li>In Left shift operation the LSBs (Least Significant Bit) get’s vacant, as the binary bits are sifted to the Left. And, it doesn’t matter whether the left operand is +ve or -ve, you can’t fill in the sign value for the vacant places at the LSB.</li>
+    </li>Therefore, there is no need for the Unsigned Left Shift Operator (<<<) in Java. Because the Left Shift Operator (<<) does the Job.</li>
+   </ol>
+</li>
+</ul>
