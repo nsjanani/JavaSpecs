@@ -101,4 +101,5 @@ Additional Rules:
 <li>Spec #2: Else If either of the operand is float, the result is promoted to float</li>
 <li>Spec #3: Else If either of the operand is long, the result is promoted to long</li>
 <li>Spec #4: Else If either of the operand is int, the result is promoted to int</li>
+<li>Spec #5: The original values is not affected by this promotion</li>
 </ul>

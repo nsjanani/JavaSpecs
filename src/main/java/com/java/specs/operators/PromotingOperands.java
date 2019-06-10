@@ -24,11 +24,18 @@ public class PromotingOperands {
      * Spec #3: Else If either of the operand is long, the result is promoted to long
      */
     //    int r3 = l + s; // Compiler error
-    float r3 = l + s;
+    long r3 = l + s;
 
     /**
      * Spec #4: Else If either of the operand is int, the result is promoted to int
      */
     //    int r4 = i + s; // Compiler error
-    float r4 = i + s;
+    int r4 = i + s;
+
+    /**
+     * Spec #5: The original values is not affected by this promotion
+     * s is copied to intermediate workspace and promoted and hence the original value is not affected
+     * This is similar to pass by value
+     */
+    int r5 = i + s;
 }
