@@ -103,3 +103,10 @@ Additional Rules:
 <li>Spec #4: Else If either of the operand is int, the result is promoted to int</li>
 <li>Spec #5: The original values is not affected by this promotion</li>
 </ul>
+
+<h6> Assignement Operators: </h5> (Example File Name: AssignementOperators.java)
+<ul>
+<li>Spec #1: Avoids extra typing</li>
+<li>Spec #2: Explicit cast for data types less than int - example - short</li>
+<li>Spec #3: Unambiguity</li>
+</ul>
