@@ -118,4 +118,5 @@ Additional Rules:
 <li>Spec #2: If the two operands are of different type, then the resulting type is the type of the larger of its two operands</li>
 <li>Spec #3: It is also possible to get result smaller than int. This only works however if the expression type of the other operand is of that smaller type</li>
 <li>Spec #4: The operands doesn't have to be numeric only</li>
+<li> Spec #5: Resulting type should be assignment compatible, otherwise a compiler error will occur</li>
 </ul>

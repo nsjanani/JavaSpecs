@@ -28,8 +28,6 @@ public class TernaryOperators {
 
         /**
          * Spec #2: If the two operands are of different type, then the resulting type is the type of the larger of its two operands
-         * Notice that Resulting type is based on the assignment compatibility of both the operands
-         * As an example, Boolean and int can't be combined
          */
         long lresult = (true)? b : l;
         System.out.println(lresult);
@@ -55,5 +53,12 @@ public class TernaryOperators {
          */
         boolean boresult = (false)? bo1 : bo2;
         System.out.println(boresult);
+
+        /**
+         * Spec #5: Resulting type should be assignment compatible, otherwise a compiler error will occur
+         * As an example, Boolean and int can't be combined
+         */
+//        boolean bo1result =(false)? bo1 : i;
+//        System.out.println(bo1result);
     }
 }
