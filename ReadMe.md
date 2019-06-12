@@ -109,4 +109,5 @@ Additional Rules:
 <li>Spec #1: Avoids extra typing</li>
 <li>Spec #2: Explicit cast for data types less than int - example - short</li>
 <li>Spec #3: Unambiguity</li>
+<li>Spec #4: Assignment Operators --> +=, -=, *=, /=, %=, &=. |=, ^=, >>=, >>>=, <<=</li>
 </ul>
