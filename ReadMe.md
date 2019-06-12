@@ -111,3 +111,10 @@ Additional Rules:
 <li>Spec #3: Unambiguity</li>
 <li>Spec #4: Assignment Operators --> +=, -=, *=, /=, %=, &=. |=, ^=, >>=, >>>=, <<=</li>
 </ul>
+
+<h6> Ternary Operators: </h5> (Example File Name: TernaryOperators.java)
+<ul>
+<li>Spec #1: If two operands are of the same type, the resulting type is of the same type</li>
+<li>Spec #2: If the two operands are of different type, then the resulting type is the type of the larger of its two operands</li>
+<li>Spec #3: It is also possible to get result smaller than int. This only works however if the expression type of the other operand is of that smaller type</li>
+</ul>
