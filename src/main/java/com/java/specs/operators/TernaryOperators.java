@@ -3,6 +3,7 @@ package com.java.specs.operators;
 public class TernaryOperators {
 
     public static void main(String[] args) {
+        Byte b2 = 23;
         byte b = 34;
         byte b1 = 34;
         char c = 123;
@@ -12,10 +13,12 @@ public class TernaryOperators {
         long l = 3422;
         float f = 12323;
         double d = 2321313;
-        boolean bo = false;
+        boolean bo1 = false;
+        boolean bo2 = true;
 
         /**
          * Spec #1: If two operands are of the same type, the resulting type is of the same type
+         * It won't force its result to be int or larger.
          */
         byte bresult = (true)? b : b1;
         System.out.println(bresult);
@@ -34,6 +37,9 @@ public class TernaryOperators {
         float fresult = (false)? f : i;
         System.out.println(fresult);
 
+        double dresult = (true)? b2: d;
+        System.out.println(dresult);
+
         /**
          * Spec #3: It is also possible to get result smaller than int
          * This only works however if the expression type of the other operand is of that smaller type
@@ -43,5 +49,11 @@ public class TernaryOperators {
 
         char c1result = (false)? (char)b : c;
         System.out.println(c1result);
+
+        /**
+         * Spec #4: The operands doesn't have to be numeric only
+         */
+        boolean boresult = (false)? bo1 : bo2;
+        System.out.println(boresult);
     }
 }
