@@ -1,6 +1,6 @@
 package com.java.specs.array;
 
-class ArrayInitialisation {
+class ArraySpecs {
 
     public static void main(String[] args) {
 
@@ -86,6 +86,20 @@ class ArrayInitialisation {
          * Spec #6: Null values allowed in initialisation
          */
         Thing[] things2 = new Thing[] {null, new Thing()};
+
+        /**
+         * Spec #7: Array Copy
+         */
+        System.out.println("Array Copy");
+        int[] arr14 = new int[]{3,4,4};
+        int[] arr15 = new int[10];
+        int len = arr14.length;
+        System.out.println(len);
+        System.arraycopy(arr14, 1, arr15, 0, 2);
+        for(int i:arr15)
+            System.out.print(i + " ");
+        System.out.println();
+
     }
 
     static void intArrayMethod(int[] arr) {
