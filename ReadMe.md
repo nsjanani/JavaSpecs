@@ -104,7 +104,7 @@ Additional Rules:
 <li>Spec #5: The original values is not affected by this promotion</li>
 </ul>
 
-<h6> Assignement Operators: </h5> (Example File Name: AssignementOperators.java)
+<h5> Assignement Operators: </h5> (Example File Name: AssignementOperators.java)
 <ul>
 <li>Spec #1: Avoids extra typing</li>
 <li>Spec #2: Explicit cast for data types less than int - example - short</li>
@@ -112,11 +112,26 @@ Additional Rules:
 <li>Spec #4: Assignment Operators --> +=, -=, *=, /=, %=, &=. |=, ^=, >>=, >>>=, <<=</li>
 </ul>
 
-<h6> Ternary Operators: </h5> (Example File Name: TernaryOperators.java)
+<h5> Ternary Operators: </h5> (Example File Name: TernaryOperators.java)
 <ul>
 <li>Spec #1: If two operands are of the same type, the resulting type is of the same type. It won't force its result to be int or larger.</li>
 <li>Spec #2: If the two operands are of different type, then the resulting type is the type of the larger of its two operands</li>
 <li>Spec #3: It is also possible to get result smaller than int. This only works however if the expression type of the other operand is of that smaller type</li>
 <li>Spec #4: The operands doesn't have to be numeric only</li>
 <li> Spec #5: Resulting type should be assignment compatible, otherwise a compiler error will occur</li>
+</ul>
+
+<h5> Variable Names: </h5> (Example File Name: _Dummy.java)
+<ul>
+<li>Spec #1: Variable name can start with "_"</li>
+<li>Spec #2: Variable name can start with "$"</li>
+</ul>
+
+<h4> Arrays: </h4> 
+<ul>
+<li>Spec #1: Different ways of array initialization</li>
+<li>Spec #2: Trailing commas are accepted</li>
+<li>Spec #3: Invalid array initialisation</li>
+<li>Spec #4: Array values initialized with null or 0, based on reference or primitive type respectively</li>
+<li>Spec #5: Passing array to method calls</li>
 </ul>

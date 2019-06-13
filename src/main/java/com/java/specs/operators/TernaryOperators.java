@@ -60,5 +60,18 @@ public class TernaryOperators {
          */
 //        boolean bo1result =(false)? bo1 : i;
 //        System.out.println(bo1result);
+
+//        foo(true?1:"1");
+        foo(false?null:null);
+
+        int c12 = (true)? b : (byte)c;
+
+        /**
+         *
+         */
+        byte result = (false)? b: b2;
     }
+
+    static void foo(String s){System.out.println("String");}
+    static void foo(Object o){System.out.println("Object");}
 }
