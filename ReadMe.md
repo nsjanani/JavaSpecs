@@ -134,4 +134,5 @@ Additional Rules:
 <li>Spec #3: Invalid array initialisation</li>
 <li>Spec #4: Array values initialized with null or 0, based on reference or primitive type respectively</li>
 <li>Spec #5: Passing array to method calls</li>
+<li>Spec #6: Null values allowed in initialisation</li>
 </ul>

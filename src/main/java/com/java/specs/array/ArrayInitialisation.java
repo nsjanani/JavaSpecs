@@ -81,6 +81,11 @@ class ArrayInitialisation {
         thingArrayMethod1(new Thing[3]);
 //        thingArrayMethod(new Thing[3]); // nullPointerException
 //        thingArrayMethod(new Thing[3]{new Thing(), new Thing(), new Thing()}); //invalid
+
+        /**
+         * Spec #6: Null values allowed in initialisation
+         */
+        Thing[] things2 = new Thing[] {null, new Thing()};
     }
 
     static void intArrayMethod(int[] arr) {
