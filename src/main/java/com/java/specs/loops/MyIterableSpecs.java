@@ -5,7 +5,8 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
- * Spec #1: Any class that implements Iterable will have to implement iterator() method that returns the Iterator object - used in for loop
+ * Spec #1: For each loop can be used for any class that implements Iterable.
+ * Where we will implement iterator() method that returns the Iterator object which is used in for each loop.
  */
 
 public class MyIterableSpecs {
@@ -29,7 +30,6 @@ class MyIterable<T> implements Iterable<T> {
     public MyIterable(T[] t) {
         this.myIterableList = Arrays.asList(t);
     }
-
 
     @Override
     public Iterator<T> iterator() {
